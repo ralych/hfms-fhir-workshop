@@ -1,1 +1,1 @@
-# fhs-fhir-workshop
+# hfms-fhir-workshop
