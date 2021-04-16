@@ -1,0 +1,41 @@
+{
+	"resourceType": "Patient",
+	"name": [
+		{
+			"use": "usual",
+			"family": "Mustermann",
+			"given": [
+				"Max"
+			]
+		}
+	],
+	"identifier": [
+		{
+			"use": "usual",
+			"system": "urn:oid:12.16.756.5.30.1.221.1.1.1.1",
+			"value": "urn:uuid:0f1de981-67d9-4c1b-9a8e-49090e032ac3",
+			"assigner": {
+				"display": "HFMS-WS"
+			}
+		}
+	],
+	"active": true,
+	"telecom": [
+		{
+			"system": "phone",
+			"use": "mobile"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1990-07-30T12:00:00.000Z",
+	"address": [
+		{
+			"use": "home",
+			"line": [
+				"Mustergasse 99"
+			],
+			"city": "Musterhausen",
+			"postalCode": "9999"
+		}
+	]
+}

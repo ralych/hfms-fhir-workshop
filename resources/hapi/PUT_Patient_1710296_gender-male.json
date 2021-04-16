@@ -1,0 +1,40 @@
+{
+    "resourceType": "Patient",
+    "id": "1710296",
+    "meta": {
+        "versionId": "3",
+        "lastUpdated": "2021-01-04T12:02:36.966+00:00",
+        "source": "#XajXijX2nUpEpDyQ"
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Peter <b>NAPOLIN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>Meyersche Straße4 </span><br/><span>Bochum </span></td></tr><tr><td>Date of birth</td><td><span>30 November 2020</span></td></tr></tbody></table></div>"
+    },
+    "name": [
+        {
+            "use": "usual",
+            "family": "Napolin",
+            "given": [
+                "Peter"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "use": "mobile"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "2020-11-30T23:00:00.000Z",
+    "address": [
+        {
+            "use": "home",
+            "line": [
+                "Meyersche Straße4"
+            ],
+            "city": "Bochum",
+            "postalCode": "14785"
+        }
+    ]
+}

@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "4eb83469-b095-451e-a7c1-2950ac07d44c",
+		"name": "HFMS-FHIR-WS",
+		"description": "HL7 FHIR Gastvorlesung Höhere Fachschule Medizintechnik Sarnen\n\nProktischer Workshop Anwendung FHIR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Metadata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/metadata",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"metadata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patient (1710296)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Patient/1710296",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Patient",
+								"1710296"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patient (2040998)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Patient/2040998",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Patient",
+								"2040998"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patient (1710296) male",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/fhir+json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"resourceType\": \"Patient\",\n    \"id\": \"1710296\",\n    \"meta\": {\n        \"versionId\": \"3\",\n        \"lastUpdated\": \"2021-01-04T12:02:36.966+00:00\",\n        \"source\": \"#XajXijX2nUpEpDyQ\"\n    },\n    \"text\": {\n        \"status\": \"generated\",\n        \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><div class=\\\"hapiHeaderText\\\">Peter <b>NAPOLIN </b></div><table class=\\\"hapiPropertyTable\\\"><tbody><tr><td>Address</td><td><span>Meyersche Straße4 </span><br/><span>Bochum </span></td></tr><tr><td>Date of birth</td><td><span>30 November 2020</span></td></tr></tbody></table></div>\"\n    },\n    \"name\": [\n        {\n            \"use\": \"usual\",\n            \"family\": \"Napolin\",\n            \"given\": [\n                \"Peter\"\n            ]\n        }\n    ],\n    \"telecom\": [\n        {\n            \"system\": \"phone\",\n            \"use\": \"mobile\"\n        }\n    ],\n    \"gender\": \"male\",\n    \"birthDate\": \"2020-11-30T23:00:00.000Z\",\n    \"address\": [\n        {\n            \"use\": \"home\",\n            \"line\": [\n                \"Meyersche Straße4\"\n            ],\n            \"city\": \"Bochum\",\n            \"postalCode\": \"14785\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Patient/1710296",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Patient",
+								"1710296"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patient (1710296) unknown",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"resourceType\": \"Patient\",\n    \"id\": \"1710296\",\n    \"meta\": {\n        \"versionId\": \"3\",\n        \"lastUpdated\": \"2021-01-04T12:02:36.966+00:00\",\n        \"source\": \"#XajXijX2nUpEpDyQ\"\n    },\n    \"text\": {\n        \"status\": \"generated\",\n        \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><div class=\\\"hapiHeaderText\\\">Peter <b>NAPOLIN </b></div><table class=\\\"hapiPropertyTable\\\"><tbody><tr><td>Address</td><td><span>Meyersche Straße4 </span><br/><span>Bochum </span></td></tr><tr><td>Date of birth</td><td><span>30 November 2020</span></td></tr></tbody></table></div>\"\n    },\n    \"name\": [\n        {\n            \"use\": \"usual\",\n            \"family\": \"Napolin\",\n            \"given\": [\n                \"Peter\"\n            ]\n        }\n    ],\n    \"telecom\": [\n        {\n            \"system\": \"phone\",\n            \"use\": \"mobile\"\n        }\n    ],\n    \"gender\": \"unknown\",\n    \"birthDate\": \"2020-11-30T23:00:00.000Z\",\n    \"address\": [\n        {\n            \"use\": \"home\",\n            \"line\": [\n                \"Meyersche Straße4\"\n            ],\n            \"city\": \"Bochum\",\n            \"postalCode\": \"14785\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Patient/1710296",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Patient",
+								"1710296"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Patient (0f1de981-67d9-4c1b-9a8e-49090e032ac3)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"resourceType\": \"Patient\",\n    \"name\": [\n        {\n            \"use\": \"usual\",\n            \"family\": \"Mustermann\",\n            \"given\": [\n                \"Max\"\n            ]\n        }\n    ],\n    \"identifier\": [\n    {\n      \"use\": \"usual\",\n      \"system\": \"urn:oid:12.16.756.5.30.1.221.1.1.1.1\",\n      \"value\": \"urn:uuid:0f1de981-67d9-4c1b-9a8e-49090e032ac3\",\n      \"assigner\": {\n        \"display\": \"HFMS-WS\"\n      }\n    }\n  ],\n  \"active\": true,\n    \"telecom\": [\n        {\n            \"system\": \"phone\",\n            \"use\": \"mobile\"\n        }\n    ],\n    \"gender\": \"male\",\n    \"birthDate\": \"1990-07-30T12:00:00.000Z\",\n    \"address\": [\n        {\n            \"use\": \"home\",\n            \"line\": [\n                \"Mustergasse 99\"\n            ],\n            \"city\": \"Musterhausen\",\n            \"postalCode\": \"9999\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Patient",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Patient (2040998)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"resourceType\": \"Patient\",\n    \"name\": [\n        {\n            \"use\": \"usual\",\n            \"family\": \"Mustermann\",\n            \"given\": [\n                \"Max\"\n            ]\n        }\n    ],\n    \"identifier\": [\n    {\n      \"use\": \"usual\",\n      \"system\": \"urn:oid:12.16.756.5.30.1.221.1.1.1.1\",\n      \"value\": \"0f1de981-67d9-4c1b-9a8e-49090e032ac3\",\n      \"assigner\": {\n        \"display\": \"HFMS-WS\"\n      }\n    }\n  ],\n  \"active\": true,\n    \"telecom\": [\n        {\n            \"system\": \"phone\",\n            \"use\": \"mobile\"\n        }\n    ],\n    \"gender\": \"male\",\n    \"birthDate\": \"1990-07-30T12:00:00.000Z\",\n    \"address\": [\n        {\n            \"use\": \"home\",\n            \"line\": [\n                \"Mustergasse 99\"\n            ],\n            \"city\": \"Musterhausen\",\n            \"postalCode\": \"9999\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Patient/2040998",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Patient",
+								"2040998"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Patient",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"resourceType\": \"Patient\",\n    \"name\": [\n        {\n            \"use\": \"usual\",\n            \"family\": \"Mustermann\",\n            \"given\": [\n                \"Max\"\n            ]\n        }\n    ],\n    \"identifier\": [\n    {\n      \"use\": \"usual\",\n      \"system\": \"urn:oid:12.16.756.5.30.1.221.1.1.1.1\",\n      \"value\": \"0f1de981-67d9-4c1b-9a8e-49090e032ac3\",\n      \"assigner\": {\n        \"display\": \"HFMS-WS\"\n      }\n    }\n  ],\n  \"active\": true,\n    \"telecom\": [\n        {\n            \"system\": \"phone\",\n            \"use\": \"mobile\"\n        }\n    ],\n    \"gender\": \"male\",\n    \"birthDate\": \"1990-07-30T12:00:00.000Z\",\n    \"address\": [\n        {\n            \"use\": \"home\",\n            \"line\": [\n                \"Mustergasse 99\"\n            ],\n            \"city\": \"Musterhausen\",\n            \"postalCode\": \"9999\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Patient?given=Peter&family=Balm",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "given",
+									"value": "Peter"
+								},
+								{
+									"key": "family",
+									"value": "Balm"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Practitioner",
+			"item": []
+		},
+		{
+			"name": "Organization",
+			"item": []
+		},
+		{
+			"name": "PractitionerRole",
+			"item": []
+		},
+		{
+			"name": "Organization",
+			"item": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HFMS_HOST",
+			"value": "hapi.fhir.org"
+		},
+		{
+			"key": "HFMS_BASE",
+			"value": "/baseR4"
+		}
+	]
+}
