@@ -7,10 +7,37 @@
 	},
 	"item": [
 		{
-			"name": "Patient",
+			"name": "Capability",
 			"item": [
 				{
-					"name": "Metadata",
+					"name": "ch test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://test.ahdis.ch/r4/metadata?_format=json",
+							"protocol": "http",
+							"host": [
+								"test",
+								"ahdis",
+								"ch"
+							],
+							"path": [
+								"r4",
+								"metadata"
+							],
+							"query": [
+								{
+									"key": "_format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hapi.fhir.org",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -27,7 +54,12 @@
 						}
 					},
 					"response": []
-				},
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
 				{
 					"name": "Get Patient (1710296)",
 					"request": {
@@ -245,19 +277,148 @@
 		},
 		{
 			"name": "Practitioner",
-			"item": []
+			"item": [
+				{
+					"name": "Get Practitioners",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Practitioner",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Practitioner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Practitioners clinFhirpaZqsdJU9Th93aqNelCyIuCeL2F3",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": " application/fhir+json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Practitioner/clinFhirpaZqsdJU9Th93aqNelCyIuCeL2F3",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Practitioner",
+								"clinFhirpaZqsdJU9Th93aqNelCyIuCeL2F3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Organization",
-			"item": []
+			"item": [
+				{
+					"name": "Get Organizations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Organization",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Organization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization 2047054",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/Organization/2047054",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"Organization",
+								"2047054"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "PractitionerRole",
-			"item": []
-		},
-		{
-			"name": "Organization",
-			"item": []
+			"item": [
+				{
+					"name": "PractitionerRoles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/PractitionerRole/",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"PractitionerRole",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PractitionerRole 1423806",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HFMS_HOST}}/{{HFMS_BASE}}/PractitionerRole/1423806",
+							"protocol": "http",
+							"host": [
+								"{{HFMS_HOST}}"
+							],
+							"path": [
+								"{{HFMS_BASE}}",
+								"PractitionerRole",
+								"1423806"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [

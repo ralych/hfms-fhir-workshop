@@ -22,7 +22,7 @@ GET http://hapi.fhir.org/baseR4/Patient/1710296<br>
 no body
 
 UPDATE:
-PUT http://hapi.fhir.org/baseR4/Patient/1710296<br>
+PUT 		<br>
 [body](https://github.com/ralych/hfms-fhir-workshop/resources/hapi/PUT_Patient_1710296_gender-male.json)
 <br>or<br>
 [body](https://github.com/ralych/hfms-fhir-workshop/resources/hapi/PUT_Patient_1710296_gender-male.json)
