@@ -3,14 +3,8 @@
 ## HL7 FHIR Testserver
 ### FHIR Server der HAPI (Java Library) Entwicklung
 #### Capability Statement
-[CapabilityStatement JSON Format](http://hapi.fhir.org/baseR4/metadata?_format=json)<br>
-[CapabilityStatement XML Format](http://hapi.fhir.org/baseR4/metadata?_format=xml)
-
-###FHIR Server CH-Core
-#### Capability Statement
-[CapabilityStatement JSON Format](http://test.ahdis.ch/r4/metadata?_format=json)
-[CapabilityStatement XML Format](http://test.ahdis.ch/r4/metadata?_format=xml)
-
+[CapabilityStatement JSON Format](https://hapi.fhir.org/baseR5/metadata?_format=json)<br>
+[CapabilityStatement XML Format](https://hapi.fhir.org/baseR5/metadata?_format=xml)
 
 #### CRUD Patient
 CREATE:
@@ -47,16 +41,8 @@ GET http://hapi.fhir.org/baseR4/Patient?given=Peter&family=Balm
 Search Observations for Patient|Author...
 
 
-
 <br>
 #### Validate Resource against profile
-Validieren Patient Resource gegen CH-Core<br>
-POST http://test.ahdis.ch/r4/$validate?profile=http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient<br>
-[body](https://github.com/ralych/hfms-fhir-workshop/resources/fhirch/)
-
-
-Some scripts can be found [here](https://github.com/ahdis/matchbox/blob/master/test.ahdis.ch.http)
-
-
-
+https://validator.fhir.org/
+Bsp. Ressourcen: https://github.com/ralych/hfms-fhir-workshop/resources/fhirch/
 
